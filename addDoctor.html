@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Doctor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="doc.css">
+</head>
+<body>
+    <!-- <input type="checkbox"id="check"> -->
+    <!-- <header>
+        <label for="check">
+            <i class="fas fa-bars"id="side_nav_bar"></i>
+        </label>
+        <div class="left-side">
+            <h3>HealthWay</h3>
+        </div>
+    </header> -->
+    <div class="side-nav">
+        <div class="logo">
+            <img src="logo.jpg" alt=""class="image">
+        </div>
+        <a href="dashboard.html"target="_blank"><i class="fa  fa-desktop"><span>Dashboard</span></i></a>
+        <a href="#"><i class="fa fa-user-md"><span>Add Doctors</span></i></a>
+        <a href="app.html"target="_blank"><i class="fa fa-clock"><span>Appointments Management</span></i></a>
+        <a href="patients.html"target="_blank"><i class="fa fa-user"><span> Patients History</span></i></a>
+    </div>
+    
+    <div class="container">
+        <form id="addDoctor">
+        <h2>Add Doctor</h2>
+        <label for="doctorName">Name</label>
+        <input type="text"id="doctorName"name="doctorName"required>
+        <label for="speciality">Speciality</label>
+        <input type="text"id="speciality"name="speciality"required>
+        <label for="emial">Email</label>
+        <input type="email"id="email"name="email"required>
+        <label for="phone">Phone Number</label>
+        <input type="cell"id="phone"name="phone"required>
+        <label>Available Week Days</label>
+        <div class="weekDays">
+            <label><input type="checkbox"name="weekdays"value="Monday">Monday</label>
+            <label><input type="checkbox"name="weekdays"value="Tuesday">Tuesday</label>
+            <label><input type="checkbox"name="weekdays"value="Wednesday">Wednesday</label>
+            <label><input type="checkbox"name="weekdays"value="Thursday">Thursday</label>
+            <label><input type="checkbox"name="weekdays"value="Friday">Friday</label>
+            <label><input type="checkbox"name="weekdays"value="Saturday">Saturday</label>
+            <label><input type="checkbox"name="weekdays"value="Sunday">Sunday</label>
+        </div>
+        <label for="timeSlots">Available Time Slots</label>
+        <input type="text"id="timeSlots"name="timeSlots"placeholder="e.g., 9:00 AM - 12:00 PM, 2:00 PM - 5:00 PM"required>
+        <button type="submit">Add Doctor</button>
+    </form>
+    <p id="successMessage" style="display: none; color: green;">Form submitted successfully!</p>
+
+    </div>
+    <script src="doc.js"></script>
+</body>
+</html>

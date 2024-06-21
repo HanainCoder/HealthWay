@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+    <title>HealthWay</title>
+    <link rel="stylesheet" href="sty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <link rel="stylesheet" href="stylee.css">
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <link rel="stylesheet" href="st.css">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    text-decoration:none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+    background-color: rgb(54, 77, 120);
+    background: url(Untitled\ design\ \(4\).jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    background:rgb(48, 48, 87);
+    height:80px;
+    width:100%;
+}
+label.logo{
+    color:white;
+    font-size: 35px;
+    line-height: 80px;
+    padding:0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float:right;
+    margin-right:20px ;
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: white;
+    font-size:17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background:rgb(20, 20, 53);
+    transition:5s;
+}
+.checkbtn{
+    font-size:30px;
+    color:white;
+    float:right;
+    line-height: 80px;
+    margin-right:40px;
+    cursor:pointer;
+}
+/* .login-box{
+    width:360px;
+    height:280px;
+    margin:auto;
+    background-color: white;
+    border-radius:3px;
+} */
+.log a:link,a:visited{
+    background-color: rgb(15, 15, 51);
+    color:white;
+    padding: 22px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position:fixed;
+    font-size:54px;
+    left:70%;
+    top:80%;
+    text-transform: uppercase;
+}
+a:hover, a:active{
+    background-color: red;
+}
+.heading{
+            margin-top:-100px;
+            width:90%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin:20px auto;
+        }
+        .heading h1{
+            font-size: 50px;
+            color:#000;
+            margin-bottom:25px;
+            position:relative;
+        }
+        .heading h1::after{
+            content:"";
+            position: absolute;
+            width:100%;
+            height:4px;
+            display:block;
+            margin:0 auto;
+            background-color: #4caf50;
+        }
+        .heading p{
+            font-size: 18px;
+            color:#666;
+            margin-bottom: 35px;
+        }
+        .container{
+            width:90%;
+            margin:0 auto;
+            padding:10px 20px;
+        }
+        .about{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .about-img{
+            flex:1;
+            margin-right: 40px;
+            overflow: hidden;
+        }
+        .about-img img{
+            max-width: 100%;
+            height:auto;
+            display: block;
+            transition: 0.5s ease;
+                }
+                .about-img:hover img{
+                    transform: scale(1.2);
+                }
+        .about-content{
+            flex:1;
+        }
+        .about-content h2{
+            font-size: 23px;
+            margin-bottom: 15px;
+            color:#333;
+        }
+        .about-content p{
+            font-size: 18px;
+            color:#666;
+            line-height: 1.5;
+        }
+        .about-content .read-more{
+            display: inline-block;
+            padding:10px 20px;
+            font-size: 19px;
+            background-color: #4caf50;
+            color:#fff;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top:15px;
+            transition: 0.3s ease;
+        }
+        .about-content.read-more:hover{
+            background-color: #3e8e41;
+        }
+        .ab{
+            margin-top:620px;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox"id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo">HealthWay</label>
+        <ul>
+            <li><a class="active"href="#">Home</a></li>
+            <li><a href="#sec1">About us</a></li>
+            <li><a href="#sec2">Services</a></li>
+            <li><a href="#co">Contact</a></li>
+            <li><a href="#fe"">Feedback</a></li>
+            <li><a class="log" href="login.html"target="_blank">Login Here</a></li>
+        </ul>
+    </nav>
+     <!-- <div class="login-box">
+        <h1>Login</h1>
+        <form>
+            <label>Email</label>
+            <input type="email"placeholder="">
+            <label>Password</label>
+            <input type="password"placeholder="">
+            <input type="button"value="Submit">
+        </form>
+     </div>
+     <p>Not have an account? <a href="#">Sign Up here</a></p> -->
+     <section id="sec1">
+    <div class="ab">
+        <div class="heading">
+            <h1>About Us</h1>
+            <p>
+                HealthWay is a pioneering healthcare company committed to improving the well-being of individuals through innovative medical solutions and patient-centric care. With a focus on holistic health, HealthWay strives to empower individuals to lead healthier and happier lives.</p>
+        </div>
+        <div class="container">
+            <section class="about">
+                <div class="about-img">
+                    <img src="Health medical care  (Facebook Post).png" alt="error">
+                </div>
+                <div class="about-content">
+                    <h2>Health Empowerment</h2>
+                    <p>At HealthWay, we are driven by a passion for revolutionising healthcare. With a steadfast commitment to providing unparalleled medical solutions and compassionate care, we stand at the forefront of innovation. Our journey began with a vision to redefine the standards of healthcare, focusing not only on treating ailments but also on promoting holistic wellness.Founded on the principles of excellence and integrity, we strive to create a patient-centric environment where every individual receives personalised attention and support. Through cutting-edge technology and a team of dedicated professionals, we aim to empower our patients to take control of their health and live fulfilling lives.</p>
+                    <a href=""class="read-more">Read More</a>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<div class="se" id="sec2">
+    <div class="section">
+        <div class="title">
+            <h1>Our Services</h1>
+        </div>
+        <div class="services">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-location"></i>
+                </div>
+                <h2>Hospital Location Assistance</h2>
+                <p>HealthWay helps users find hospitals and medical facilities in different areas. Users can search for hospitals based on factors like specialisations, services offered, or proximity to their location.</p>
+                <a href=""class="button">Read More</a>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-calendar"></i>
+                </div>
+                <h2>Doctor Scheduling and Availability</h2>
+                <p>Users can access information about doctors practicing at each hospital, including their specialisations and availability schedules. HealthWay allows users to book appointments with preferred doctors based on their availability.</p>
+                <a href=""class="button">Read More</a>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h2>User review and ratings</h2>
+                <p>HealthWay provides a platform for users to share their experiences and rate hospitals and doctors. Users can read reviews from other patients to make informed decisions about their healthcare choices.</p>
+                <a href=""class="button">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="co">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Get in touch with Healthway for all your healthcare needs and inquiries.</p>
+        <div class="contact-box">
+            <div class="contact-left">
+             <h3>Write the problem you are facing.</h3>
+             <form>
+                <div class="from-row">
+                    <div class="input-tag">
+                    <input type="text"placeholder="Write your name">
+                </div>
+                <div class="input-tag">
+                    <input type="email"placeholder="Write your email">
+                </div>
+                <div class="input-tag">
+                    <input type="phonenumber"placeholder="Write your phone number">
+                </div>
+                <div class="input-tag">
+                    <input type="text"placeholder="Topic of Problem">
+                </div>
+                <div class="input-tag">
+                    <textarea cols="20"rows="6"placeholder="Write your Problem"></textarea>
+                </div>
+                <button>Send</button>
+                </div>
+             </form>
+            </div>
+            <div class="contact-right">
+            <h3>Reach Us</h3>
+            <table>
+                <tr>
+                    <td>Phone</td>
+                    <td>0313 7499441</td>
+                </tr>
+                <tr>
+                    <td>Email </td>
+                    <td>m.hanainehsanpk@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>Taimur Chowk, Street 3<br>
+                        Zia Ul Islam, Gujrat
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="fe">
+    <div class="cont">
+        <form>
+            <h1>Give your feedback</h1>
+            <div class="id">
+                <input type="text"placeholder="Write your name">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="id">
+                <input type="email"placeholder="tom@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <textarea cols="20"rows="6"placeholder="Please write your feedback here"></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

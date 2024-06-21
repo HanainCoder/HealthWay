@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body{
+            background-color: #f2f2f2;
+        }
+        .heading{
+            width:90%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin:20px auto;
+        }
+        .heading h1{
+            font-size: 50px;
+            color:#000;
+            margin-bottom:25px;
+            position:relative;
+        }
+        .heading h1::after{
+            content:"";
+            position: absolute;
+            width:100%;
+            height:4px;
+            display:block;
+            margin:0 auto;
+            background-color: #4caf50;
+        }
+        .heading p{
+            font-size: 18px;
+            color:#666;
+            margin-bottom: 35px;
+        }
+        .container{
+            width:90%;
+            margin:0 auto;
+            padding:10px 20px;
+        }
+        .about{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .about-img{
+            flex:1;
+            margin-right: 40px;
+            overflow: hidden;
+        }
+        .about-img img{
+            max-width: 100%;
+            height:auto;
+            display: block;
+            transition: 0.5s ease;
+                }
+                .about-img:hover img{
+                    transform: scale(1.2);
+                }
+        .about-content{
+            flex:1;
+        }
+        .about-content h2{
+            font-size: 23px;
+            margin-bottom: 15px;
+            color:#333;
+        }
+        .about-content p{
+            font-size: 18px;
+            color:#666;
+            line-height: 1.5;
+        }
+        .about-content .read-more{
+            display: inline-block;
+            padding:10px 20px;
+            font-size: 19px;
+            background-color: #4caf50;
+            color:#fff;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top:15px;
+            transition: 0.3s ease;
+            
+
+        }
+        .about-content.read-more:hover{
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>About Us</h1>
+        <p>
+            HealthWay is a pioneering healthcare company committed to improving the well-being of individuals through innovative medical solutions and patient-centric care. With a focus on holistic health, HealthWay strives to empower individuals to lead healthier and happier lives.</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-img">
+                <img src="Health medical care  (Facebook Post).png" alt="error">
+            </div>
+            <div class="about-content">
+                <h2>Health Empowerment</h2>
+                <p>At HealthWay, we are driven by a passion for revolutionising healthcare. With a steadfast commitment to providing unparalleled medical solutions and compassionate care, we stand at the forefront of innovation. Our journey began with a vision to redefine the standards of healthcare, focusing not only on treating ailments but also on promoting holistic wellness.Founded on the principles of excellence and integrity, we strive to create a patient-centric environment where every individual receives personalised attention and support. Through cutting-edge technology and a team of dedicated professionals, we aim to empower our patients to take control of their health and live fulfilling lives.</p>
+                <a href=""class="read-more">Read More</a>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>

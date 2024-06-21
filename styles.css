@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #2d323e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#manageAppointments {
+    margin-bottom: 20px;
+}
+.ma{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#appointmentsList {
+    margin-top: 20px;
+}
+
+#pendingAppointmentsList, #completedAppointmentsList {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+.side-nav{
+    margin-top:50px;
+}
+ .left-side h3{
+    color:#fff;
+    font-weight:900;
+    text-transform: uppercase;
+    font-size:22px;
+    margin:10px 30px;
+    margin-top:-30px;
+} 
+.left-side span{
+    color:#19B3D3;
+}
+.side-nav {
+background-color: #272a30;
+margin-top:-90px;
+padding-top:30px;
+position:fixed;
+left:0;
+width:250px;
+height:100%;
+transition-property: 0.5s;
+transition-property: left;
+margin-bottom:-90px;
+}
+.logo{
+    text-align:center;
+}
+.side-nav .image{
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+    margin-bottom:10px;
+}
+.side-nav a{
+    color:#fff;
+    display:block;
+    width:100%;
+    line-height:60px;
+    text-decoration: none;
+    padding-left:30px;
+    box-sizing:border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+.side-nav a:hover{
+    background: #0a7e96;
+    
+}
+.side-nav i{
+    padding-right:10px;
+}
+label #side_nav_bar{
+    z-index: 1;
+    color:#fff;
+    padding:fixed;
+    /* padding-right:50px; */
+    cursor:pointer;
+    padding-left:300px;
+    font-size:20px;
+    margin:5px 0px;
+    transition-property: color;
+}
+label #side_nav_bar:hover{
+    color:rgb(83, 83, 234);
+}
+#check:checked ~ .side-nav{
+   left:-190px;
+}
+#check:checked ~ .side-nav a span{
+    display:none;
+    
+}
+#check:checked ~ .side-nav a{
+    font-size:20px;
+    width:80px;
+    margin-left:180px;
+}

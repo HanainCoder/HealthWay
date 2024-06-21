@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styy.css">
+</head>
+<body>
+</header> 
+<div class="side-nav">
+    <div class="logo">
+        <img src="logo.jpg" alt=""class="image">
+    </div>
+    <a href="dashboard.html"target="_blank"><i class="fa  fa-desktop"><span>Dashboard</span></i></a>
+    <a href="#"><i class="fa fa-user-md"><span>Add Doctors</span></i></a>
+    <a href="app.html"target="_blank"><i class="fa fa-clock"><span>Appointments Management</span></i></a>
+    <a href="#"><i class="fa fa-user"><span> Patients History</span></i></a>
+</div>
+    <div class="container">
+        <h1>Patient Dashboard</h1>
+        
+        <!-- Manage Patients Section -->
+        <div id="managePatients">
+            <h2>Manage Patients <i class="fas fa-user"></i></h2>
+            <button onclick="showAllPatients()">View All Patients</button>
+            <div id="patientsList"></div>
+        </div>
+    </div>
+
+    <script>
+        const patientData = [
+    {
+        patientName: "Hussain Khan",
+        age: 20,
+        gender: "Male",
+        contact: "0223-4536-780"
+    },
+    {
+        patientName: "Basit",
+        age: 19,
+        gender: "Male",
+        contact: "0398-7635-321"
+    },
+    {
+        patientName: "Ramiz Ilyas",
+        age: 20,
+        gender: "Male",
+        contact: "0336-7489-123"
+    },
+    {
+        patientName: "Rabia Butt",
+        age: 35,
+        gender: "Female",
+        contact: "0321-654-0987"
+    }
+];
+
+function showAllPatients() {
+    const patientsList = document.getElementById('patientsList');
+    patientsList.innerHTML = '';
+
+    patientData.forEach(patient => {
+        const patientItem = document.createElement('div');
+        patientItem.innerHTML = `
+            <p><strong>Name:</strong> ${patient.patientName}</p>
+            <p><strong>Age:</strong> ${patient.age}</p>
+            <p><strong>Gender:</strong> ${patient.gender}</p>
+            <p><strong>Contact:</strong> ${patient.contact}</p>
+            <hr>
+        `;
+        patientsList.appendChild(patientItem);
+    });
+}
+
+    </script>
+</body>
+</html>

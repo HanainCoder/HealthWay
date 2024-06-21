@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body{
+            background-color:rgb(67, 79, 100);
+            font-family: 'Roboto',sans-serif;
+        }
+        .SignUp-box{
+            width:370px;
+            height:620px;
+            margin:auto;
+            background-color: white;
+            border-radius: 3px;
+        }
+        h1{
+            text-align: center;
+            padding-top:15px;
+        }
+        form{
+            width:300px;
+            margin-left:20px;
+        }
+        form label{
+            display:flex;
+            margin-top:20px;
+            font-size:18px;
+        }
+        form input{
+            width:100%;
+            padding:7px;
+            border:none;
+            border:1px solid grey;
+            border-radius: 6px;
+            outline:none;
+        }
+        input[type="button"]{
+            width:320px;
+            height:35px;
+            margin-top: 25px;
+            border:none;
+            background-color:rgb(122, 199, 45);
+            color:white;
+            font-size:18px;
+        }
+        p{
+            text-align: center;
+            padding-top:20px;
+            font-size:15px;
+        }
+        .p2{
+            text-align:center;
+            font-size:15px;
+            color:white;
+            margin-top:-10px;
+        }
+        button{
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="SignUp-box">
+        <h1>Sign Up</h1>
+        <form>
+            <label>First Name</label>
+            <input type="text" placeholder="">
+            <label>Last Name</label>
+            <input type="text" placeholder="">
+            <label>Email</label>
+            <input type="email" placeholder="">
+            <label>Password</label>
+            <input type="password" placeholder="">
+            <label>Confirm Password</label>
+            <input type="password" placeholder="">
+            <input type="button"value="Submit">
+        </form>
+        <p>By clicking the Submit button, you agree to our <a href="#">Terms and Conditions</a>and <a href="#">Policy  Privacy</a></p>
+    </div>
+    <p class="p2">Already have an account? <b><a href="login.html">Login Here</a></b></p>
+</body>
+</html>

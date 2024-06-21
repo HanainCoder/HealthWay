@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="b.css">
+</head>
+<body>
+   
+    <div class="appointForm">
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm">
+            <div class="i"><img src="im/making-appointment-with-doctor-flat-concept-vector-illustration_151150-12192-removebg-preview.png" alt=""width="100px"></div>
+            <div class="form-group">
+                <label for="doctor">Select Doctor:</label>
+                <select name="doctor" id="doctor" onchange="loadAvaialbleDates()">
+                <option value="Select a doctor"></option>
+                <option value="Dr Suleman Bashir">Dr Suleman Bashir - Medical Specialist</option>
+                <option value="Dr Suleman Azeemi">Dr Suleman Azeemi - Heart Specialist</option>
+                <option value="Dr Sherazi">Dr Sherazi Lungs Specialist</option>
+                <option value="Dr Adil Abbas">Dr Adil Abbas Kidney Specialist</option>
+                <option value="Dr Adeela Zafar">Dr Adeela Zafar - Neurologist</option>
+                <option value="Dr Javed Bashir">Dr Adeela Zafar - Dermatologist</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Select Date:</label>
+                <select name="date" id="date" onchange="loadAvailableTimes()" disabled>
+                <option value="Select a Date"></option>
+            </select>
+            </div>
+            <div class="form-group">
+                <label for="time">Select time:</label>
+                <select name="time" id="time" disabled>
+                <option value="Select a time"></option>
+            </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Write your name</label>
+                <input type="text"id="name"name="name"required>
+            </div>
+            <div class="form-group">
+                <label for="email">Write your email</label>
+                <input type="email"id="email"name="email"required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Write your phone number</label>
+                <input type="tel"id="phone"name="phone"required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Book Appointment</button>
+            </div>
+        </form>
+    </div>
+    <script src="b.js"></script>
+</body>
+</html>

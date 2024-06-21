@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    background-color:aliceblue;
+}
+.pos{
+    margin-top:20px;
+    margin-bottom:10px;
+    text-align:center;
+    justify-content: space-between;
+    font-size: 33px;
+    font-weight:bold;
+    color:rgb(29, 87, 118);
+    position:relative;
+}
+.pos:hover{
+    color:rgb(42, 125, 214);
+}
+.pos::after{
+    position:absolute;
+    content:"";
+    width:190px;
+    height:2px;
+    top:40px;
+    left:540px;
+    background-color:rgb(56, 88, 170);
+    display:block;
+    bottom:-120px;
+}
+.head{
+    padding-top:10px;
+    font-size:28px;
+    padding-left:20px;
+    color:rgb(21, 75, 142);
+}
+
+.gallery-wrap{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin:10% auto;
+   
+}
+#back, #for{
+    cursor:pointer;
+    width:60px;
+    margin:40px;
+}
+.gallery{
+    width:900px;
+    display:flex;
+    overflow-x:hidden;
+    background-color: #FFF;
+    border-radius:20px;
+    margin-top:-70px;
+}
+.gallery div{
+    width:100%;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:20px;
+    padding:10px;
+    flex:none;
+    text-align: center;
+    cursor:pointer;
+}
+ .gallery div #b1:hover{
+    background-color:#c4ccd6;
+} 
+.gallery div #b2:hover{
+    background-color:#dbe6c8;
+} 
+.gallery div #b3:hover{
+    background-color:#7c9c9c6d;
+} 
+.gallery div #b4:hover{
+    background-color:#d2b5b585;
+} 
+.gallery div #b5:hover{
+    background-color:#a587a269;
+} 
+.gallery div #b6:hover{
+    background-color:#bcdcce45;
+} 
+.gallery div span{
+    border:2px solid rgb(233, 234, 235);
+    border-radius:10%;
+}
+.gallery::webkit-scrollbar{
+    display: none;
+}
+.gallery div img {
+    width: 50%;
+    border: 2px solid rgb(231, 225, 225);
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 50%; /* Makes the image a circle */
+    background-color:rgb(57, 57, 161); /* Adds background color */
+}
+.gallery div span h2{
+    font-size:22px;
+    color:rgb(64, 38, 180);
+    font-style: bold;
+    padding-bottom:5px;
+}
+.gallery div span p{
+    font-size:16px;
+    color:#5c5a5a;
+    font-style: bold;
+    padding-bottom:5px;
+    padding-top:10px;
+    line-height: 22px;
+}
+/* for doctors Hospital */
+.hea{
+    padding-top:10px;
+    font-size:28px;
+    padding-left:20px;
+    color:rgb(21, 75, 142);
+}
+.wrap{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin:10% auto;
+   
+}
+#bac, #forw{
+    cursor:pointer;
+    width:60px;
+    margin:40px;
+}
+.galery{
+    width:900px;
+    display:flex;
+    overflow-x:hidden;
+    background-color: #FFF;
+    border-radius:20px;
+    margin-top:-70px;
+}
+.galery div{
+    width:100%;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:20px;
+    padding:10px;
+    flex:none;
+    text-align: center;
+    cursor:pointer;
+}
+ .galery div #bo1:hover{
+    background-color:#b3ceea51;
+} 
+.galery div #bo2:hover{
+    background-color:#dcc7bd45;
+} 
+.galery div #bo3:hover{
+    background-color:#4c008216;
+} 
+.galery div #bo4:hover{
+    background-color:#0080801f;
+} 
+.galery div #bo5:hover{
+    background-color:#70701916;
+} 
+.galery div #bo6:hover{
+    background-color:#8fa58469;
+} 
+.galery div span{
+    border:2px solid rgb(233, 234, 235);
+    border-radius:10%;
+}
+.galery::webkit-scrollbar{
+    display: none;
+}
+.galery div img {
+    width: 50%;
+    border: 2px solid rgb(231, 225, 225);
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 50%; /* Makes the image a circle */
+    background-color:rgba(22, 108, 148, 0.976); /* Adds background color */
+}
+.galery div span h2{
+    font-size:22px;
+    color:rgba(22, 108, 148, 0.976);
+    font-style: bold;
+    padding-bottom:5px;
+}
+.galery div span p{
+    font-size:16px;
+    color:#5c5a5a;
+    font-style: bold;
+    padding-bottom:5px;
+    padding-top:10px;
+    line-height: 22px;
+}

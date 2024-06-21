@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-color:rgb(67, 79, 100);
+            font-family: 'Roboto',sans-serif;
+        }
+        .login-box{
+            width:370px;
+            height:320px;
+            margin:auto;
+            margin-top: 100px;
+            background-color: white;
+            border-radius: 3px;
+        }
+        h1{
+            text-align: center;
+            padding-top:15px;
+        }
+        form{
+            width:300px;
+            margin-left:20px;
+        }
+        form label{
+            display:flex;
+            margin-top:20px;
+            font-size:18px;
+        }
+        form input{
+            width:100%;
+            padding:7px;
+            border:none;
+            border:1px solid grey;
+            border-radius: 6px;
+            outline:none;
+        }
+        input[type="button"]{
+            width:320px;
+            height:35px;
+            margin-top: 25px;
+            border:none;
+            background-color:rgb(122, 199, 45);
+            color:white;
+            font-size:18px;
+        }
+        p{
+            text-align:center;
+            font-size:15px;
+            color:black;
+            margin-top:20px;
+        }
+        .log {
+            display: block; /* Ensures it spans the full width available */
+    width: 320px;
+    height: 35px;
+    margin: 25px auto 0; /* Centering vertically and horizontally */
+    border: none;
+    background-color: rgb(122, 199, 45);
+    color: white;
+    font-size: 20px;
+    text-align: center; /* Centers text horizontally */
+    line-height: 35px; /* Centers text vertically within the button */
+    text-decoration: none; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+            <h1>Login</h1>
+        <form>
+            <label>Email</label>
+            <input type="email" placeholder="">
+            <label>Password</label>
+            <input type="password" placeholder="">
+            <a class="log" href="dashboard.html"target="_blank">Submit</a>
+        
+        </form>
+        <p>Not have an account?<a href="Sign-Up.html">Sign Up</a></p>
+    </div>
+</body>
+</html>

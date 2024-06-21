@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin:20px;
+    background-color: #a5acba67;  
+}
+.i{
+    margin-top:-65px;
+}
+.appointForm{
+    background-color:#84a0a963;
+    padding:20px;
+    width:70%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-left:200px;
+    border-radius: 5%;
+    margin-top:10px;
+}
+.appointForm h2{
+    text-align:center;
+    font-size:33px;
+    justify-content: center;
+    padding-bottom:10px;
+    color:#076c91;
+}
+.form-group{
+    margin-bottom:20px;
+}
+.form-group label{
+    display:block;
+    margin-bottom:5px;
+    color:darkslategrey;
+    font-weight: 600;
+    font-size:18px;
+}
+.form-group select,.form-group input,.form-group button{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+.form-group button {
+    background-color:#487b8ee6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:19px;
+    transition: background-color 0.3s ease;
+}
+.form-group button:hover {
+    background-color: #076d91e6;
+}

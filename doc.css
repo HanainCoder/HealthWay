@@ -1,0 +1,76 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Poppins",sans-serif;
+    text-decoration:none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+.container{
+    padding:15px 9%;
+    padding-bottom:100px;
+    background-color:rgba(121, 162, 186, 0.769);
+}
+.container .heading{
+    font-size:33px;
+    text-align:center;
+    color:black;
+    padding-bottom:15px;
+}
+.container .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap:15px;
+    margin-top:10px;
+}
+.container .box-container .box{
+    text-align:center;
+    margin-top:10px;
+    border-radius:5px;
+    padding:30px 20px;
+    background-color: #fff;
+    box-shadow:0 5px 10px rgba(31, 8, 8, 0.2);
+    
+    cursor:pointer;
+}
+.container .box-container .box img{
+    height:80px;
+}
+.container .box-container .box h3{
+    font-size:22px;
+    text-align:center;
+    color:#434141;
+    font-weight: bold;
+}
+.container .box-container .box h4{
+
+    font-size:16px;
+    text-align:center;
+    color:#706e6e;
+    padding-top:10px;
+    padding-bottom:5px;
+}
+.container .box-container .box p{
+    font-size:14px;
+    text-align:center;
+    color:#777;
+    line-height:1.5;
+    transform: scale(1.03);
+    padding-bottom:5px;
+    cursor:pointer;
+}
+.container .box-container .box h3:hover{
+color:rgb(20, 7, 115);
+}
+.container .box-container .box h3::after{
+    content:"";
+    left:93px;
+    top:5px;
+    background-color:rgb(5, 0, 157);
+    width:100px;
+    height:3px;
+    display:block;
+    position:relative;
+    
+}

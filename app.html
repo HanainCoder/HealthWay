@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Appointment Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="side-nav">
+        <div class="logo">
+            <img src="logo.jpg" alt=""class="image">
+        </div>
+        <a href="dashboard.html"target="_blank"><i class="fa  fa-desktop"><span>Dashboard</span></i></a>
+        <a href="addDoctor.html"><i class="fa fa-user-md"><span>Add Doctors</span></i></a>
+        <a href="#"><i class="fas fa-clock"><span>Appointments Management</span></i></a>
+        <a href="patients.html"target="_blank"><i class="fa fa-user"><span> Patients History</span></i></a>
+    </div>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        
+        <!-- Manage Appointments Section -->
+        <div id="manageAppointments">
+            <h2 class="ma">Manage Appointments</h2>
+            <button onclick="showPendingAppointments()">View Pending Appointments</button>
+            <button onclick="showCompletedAppointments()">View Completed Appointments</button>
+            <div id="appointmentsList">
+                <h3>Pending Appointments</h3>
+                <div id="pendingAppointmentsList"></div>
+                <h3>Completed Appointments</h3>
+                <div id="completedAppointmentsList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const data = [
+    {
+        patientName: "Abdul Basit ",
+        doctorName: "Dr. Smith",
+        date: "2023-06-16",
+        time: "10:00 AM",
+        status: "pending"
+    },
+    {
+        patientName: "Asad Ejaz",
+        doctorName: "Dr. Adams",
+        date: "2023-06-17",
+        time: "11:00 AM",
+        status: "completed"
+    },
+    {
+        patientName: "Hussain Khan",
+        doctorName: "Dr. Brown",
+        date: "2023-06-18",
+        time: "9:00 AM",
+        status: "pending"
+    },
+    {
+        patientName: "Muhammad Umer",
+        doctorName: "Dr. Green",
+        date: "2023-06-19",
+        time: "1:00 PM",
+        status: "completed"
+    }
+];
+
+function showPendingAppointments() {
+    const pendingAppointmentsList = document.getElementById('pendingAppointmentsList');
+    pendingAppointmentsList.innerHTML = '';
+
+    data.forEach(appointment => {
+        if (appointment.status === 'pending') {
+            const appointmentItem = document.createElement('div');
+            appointmentItem.innerText = `Patient: ${appointment.patientName}`;
+            pendingAppointmentsList.appendChild(appointmentItem);
+        }
+    });
+}
+
+function showCompletedAppointments() {
+    const completedAppointmentsList = document.getElementById('completedAppointmentsList');
+    completedAppointmentsList.innerHTML = '';
+
+    data.forEach(appointment => {
+        if (appointment.status === 'completed') {
+            const appointmentItem = document.createElement('div');
+            appointmentItem.innerText = `Patient: ${appointment.patientName}`;
+            completedAppointmentsList.appendChild(appointmentItem);
+        }
+    });
+}
+
+    </script>
+</body>
+</html>
